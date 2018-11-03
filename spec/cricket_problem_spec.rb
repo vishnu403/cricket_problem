@@ -1,7 +1,8 @@
-require('./cricket_problem.rb')
+require_relative("../player")
 
-describe "cricket match emulator" do
-  it "should return the runs scored by each player" do
-    expect(get_match_details).to eql(nil)
+  describe "player plays a ball" do
+    it "should return event occured on the ball" do
+      player1 = Player.new(0,0,0,0,0,0,100,0,0,0,true)
+      expect(player1.play_ball()).to eql("played a ball")
+    end
   end
-end
