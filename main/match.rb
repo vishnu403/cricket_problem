@@ -8,7 +8,7 @@ class Match
     @player2 = player2
   end
   def ball_bowled()
-    @balls_left = @balls_left - 1
-    result = @player1.play_ball()
+    outcome = @player1.play_ball()
+    outcome
   end
 end

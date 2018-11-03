@@ -1,4 +1,4 @@
-require_relative("../player")
+require_relative("../main/player")
 
   describe "player plays a ball" do
     it "should return event occured on the ball" do
