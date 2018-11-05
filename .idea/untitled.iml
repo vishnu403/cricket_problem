@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.1, ruby-2.5.1-p57) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, ruby-2.5.1-p57) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pickup (v0.0.11, ruby-2.5.1-p57) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v3.8.0, ruby-2.5.1-p57) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.8.0, ruby-2.5.1-p57) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.8.2, ruby-2.5.1-p57) [gem]" level="application" />

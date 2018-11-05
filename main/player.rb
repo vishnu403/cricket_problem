@@ -1,13 +1,15 @@
 class Player
-  attr_accessor :probablity, :balls_faced, :runs_scored, :on_strike, :name
-  def initialize(dot, single, double, triple, four, five, six, out, balls_faced, runs_scored, on_strike, name)
-    @probablity = {"dot"=>dot, "single" => single, "double" =>double, "triple" => triple, "four"=> four, "five"=> five, "six"=> six, "out"=>out}
-    @balls_faced = balls_faced
-    @runs_scored = runs_scored
+  attr_accessor :probability, :on_strike, :name, :balls_faced, :runs_scored, :is_out
+  def initialize(probability, on_strike, name)
+    @is_out = false
     @on_strike = on_strike
+    @probability = probability
+    @balls_faced = 0
+    @runs_scored = 0
     @name = name
   end
   def play_ball
-    "out"
+    outcome = @probability.get_outcome()
+    outcome
   end
 end

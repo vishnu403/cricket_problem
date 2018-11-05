@@ -3,7 +3,7 @@ class Single
   def initialize(match)
     @match = match
   end
-  def update()
+  def update(current_balls_left, current_runs_left, )
     @match.balls_left -= 1
     @match.runs_left -=1
     @match.player1.runs_scored += 1
