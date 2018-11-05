@@ -15,10 +15,11 @@ class ScoreCard
     @balls_left = balls_left
     @wickets_left = wickets_left
     @players = players
-    @player1 = players[0]
-    @player2 = players[1]
+
   end
-  def update(outcome)
+  def update(outcome, player1, player2 )
+    @player1 = player1
+    @player2 = player2
     if outcome == "dot"
       @balls_left = @balls_left-1
     elsif outcome == "single"
@@ -68,5 +69,6 @@ class ScoreCard
       @player1 = @players[-wickets_left]
       @player1.on_strike = true
     end
+    {"player1" => @player1, "player2" => @player2}
   end
 end

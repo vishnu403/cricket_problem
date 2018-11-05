@@ -18,7 +18,7 @@ players = [virat, dhoni, bumrah, nehra]
 
 scorecard = ScoreCard.new(40,24,3, players)
 
-match = Match.new(scorecard)
+match = Match.new(scorecard,  players)
 
 while(scorecard.balls_left > 0 and scorecard.wickets_left > 0 and scorecard.runs_left > 0)
   match.ball_bowled()
